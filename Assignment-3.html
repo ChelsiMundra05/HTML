@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Chelsi Mundra">
+    <meta name="Description" content="Assignment of HTML Course">
+    <title>Assignment-3</title>
+    <style>
+        .form input{
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <form  method="post" action="/action_page.php" target="_blank">
+    <div class="form">
+    <label for="fname">First Name:</label> <br> <input  type="text" size="10" maxlength="20"> </input> <br><br>
+    <label for="lname">Last Name:</label> <br> <input type="text" size="10" maxlength="20" > </input> <br><br>
+    <label for="Email">Email:</label> <br> <input type="email" id="emailAddress" name="emailAddress"></input> <br><br>
+    <label for="Contact">Contact Number:</label> <br> <input type="number" maxlength="10">  <br><br>
+    <label for="Address">Address:</label> <br> <textarea type="text" ></textarea><br><br>
+    <label for="Username">Username:</label> <br> <input type="text" id="userName" name="userName" ></input><br><br>
+    <label for="password">Password:</label> <br> <input type="password" id="pwd" name="userPassword"><br><br>
+    </div>
+    Gender: <br> 
+        <label><input type="radio" id="male" name="gender" value="male" ></input>Male<br>
+        <label><input type="radio" id="female" name="gender" value="female" ></input>Female<br><br>
+
+    Qualification: <br>
+        <select id="Qualification" name="Qualification"size="1" multiple>
+            <optgroup label="--Select--" value="--Select--">
+                <option value="B.Tech">B.Tech</option>
+                <option value="BSC"> BSC</option>
+                <option value="BCA"> BCA</option>
+            </optgroup>
+        </select><br><br>
+
+    Experience: <br>
+        <select id="Qualification" name="Qualification"size="1" multiple>
+            <optgroup label="--Select--" value="--Select--">
+                <option value="0-2yrs">0-2yrs</option>
+                <option value="below 5yrs">below 5yrs</option>
+                <option value="above 5yrs">above 5yrs</option>
+            </optgroup>
+        </select><br><br>
+
+    Coding Languages: <br> <label><input type="checkbox" id="pref1" name="prefs" value="C/C++">C/C++</input><br>
+        <label><input type="checkbox" id="pref1" name="prefs" value="Java">Java</input><br>
+        <label><input type="checkbox" id="pref1" name="prefs" value="C#">C#</input><br>
+        <label><input type="checkbox" id="pref1" name="prefs" value="PHP">PHP</input><br>
+        <label><input type="checkbox" id="pref1" name="prefs" value="Python">Python</input><br><br><br>
+            
+    <input type="submit" name="Submit" value="Submit"></input>
+    </form>
+</body>
+</html>
